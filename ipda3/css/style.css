@@ -1,0 +1,405 @@
+@font-face {
+  font-family: "cairo";
+  src: url(../fonts/Cairo-SemiBold.ttf)
+}
+
+body {
+  font-family: "cairo";
+}
+
+.clear {
+  clear: both;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0
+}
+h1 {
+  padding-top: 80px
+}
+/* start navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: rgba(248, 249, 250, 0.9)
+}
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.navbar ul li:first-child {
+  font-size: 30px
+}
+.navbar ul li.toggle-link {
+  display: none;
+}
+.navbar ul li.toggle-link a{
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  transition-property: all;
+  transition-duration: .3s;
+}
+.navbar ul li.toggle-link a:hover {
+  color: #3aade6;
+  font-size: 23px
+}
+.navbar .logo {
+  width: 170px
+}
+.navbar .logo img {
+  width: 100%
+}
+/* end navbar */
+
+/* start header */
+.header .img-left {
+  background-image: url(../imgs/header-side.jpg);
+  background-repeat: no-repeat;
+  min-height: 730px;
+  font-size: 63px;
+  padding-top: 100px;
+  padding-left: 168px
+}
+.header .img-right img {
+  width: 100%
+}
+/* end header */
+
+/* start who we are */
+.who-we-are .heading {
+  text-align: center;
+}
+.who-we-are .heading h1::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 2px;
+  background-color: #3aade6;
+  margin: 10px auto 0;
+}
+.who-we-are .atricl {
+  padding: 100px 141px 0;
+  font-size: 30px;
+  text-align: right;
+  color: #333
+}
+.who-we-are .image img {
+  width: 100%
+}
+/* end who we are */
+
+/* start our services */
+.our-services {
+  position: relative;
+  background-image: url(../imgs/we-offer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0 200px
+}
+.our-services .heading h1::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 2px;
+  background-color: #3aade6;
+  margin: 10px auto 0;
+}
+.our-services .col-md-12 {
+  display: none
+}
+.our-services .active {
+  display: block
+}
+.our-services .carosal {
+  width: 95%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px
+}
+.our-services .carosal .image {
+  width: 30%;
+  margin: auto;
+  padding: 30px 0
+}
+.our-services .carosal .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.our-services .carosal .text h4 {
+  color: #3aade6
+}
+.our-services .carosal .text p{
+  padding: 0 31px 25px;
+ }
+.our-services .arrows {
+  position: absolute;
+  width: 100px;
+  height: 22px;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50px)
+}
+.our-services .arrows .fa-arrow-left:hover,
+.our-services .arrows .fa-arrow-right:hover {
+  color: #3aade6
+}
+.our-services .arrows .fa-arrow-left {
+  float: left;
+  font-size: 20px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: .2s;
+}
+.our-services .arrows .fa-arrow-right {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.2s
+}
+.our-services .arrows .fa-arrow-left:hover,
+.our-services .arrows .fa-arrow-right:hover {
+  color: #3aade6
+}
+/* end our services */
+
+/* start our works */
+.our-works {
+  position: relative;
+  background-color: #e9e9e9;
+  padding: 50px 0 125px
+}
+.our-works .heading h1::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 2px;
+  background-color: #3aade6;
+  margin: 10px auto 0;
+}
+.our-works .gallery, .our-works .gallery .image, .our-works .gallery .image img {
+  width: 100%
+}
+.our-works .gallery {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 30px
+}
+.our-works .gallery .image img {
+  border-radius: 20px
+}
+.our-works .gallery p {
+  padding: 20px 0;
+  font-size: 25px
+}
+.our-works .btn-info {
+  position: absolute;
+  width: 190px;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-80px);
+}
+.app-one{
+  margin: 30px 0 90px
+}
+.app-one .image {
+  width: 40%;
+  margin: auto
+}
+.app-one .image img {
+  width: 100%
+}
+.detailse .text {
+  background-color: #898989;
+  padding: 53px 160px;
+  margin-bottom: 80px;
+  font-size: 25px;
+  color: #fff
+}
+.slider {
+  overflow: hidden;
+  width: 70%;
+  margin: auto
+}
+.slider .slide {
+  float: left;
+  width: 30%;
+  text-align: center;
+  transition-property: width;
+  transition-duration: 0.3s;
+  cursor: pointer
+}
+.slider .slide img {
+  width: 100%;
+  height: 100%
+}
+.slider .slide:hover {
+  width: 33%
+}
+/* end our works */
+
+/* start features */
+.features {
+  position: relative;
+  padding: 30px  0 95px
+}
+.articles {
+  background-image: url(../imgs/articles.jpg);
+  background-size: cover;
+  background-position: center
+}
+.features .gallery {
+  position: relative;
+  margin-top: 50px;
+  box-shadow: #ccc 10px 10px 3px;
+  overflow: hidden;
+  background-color: #fff
+  /* width: 420px */
+}
+.features .gallery .image {
+  width: 80%
+}
+.features .gallery .image img {
+  width: 100%;
+}
+.features .gallery .text {
+  margin: 40px 0;
+  font-size: 30px;
+  padding: 0 30px 52px
+}
+.features .gallery .more{
+  position: absolute;
+  bottom: 27px;
+  left: 100px;
+  overflow: hidden;
+  width: 87%
+}
+.features .gallery .more i span{
+  color: #ccc
+}
+.features .more {
+  position: absolute;
+  bottom: 1px;
+  width: 150px;
+  left: 50%;
+  transform: translateX(-75px)
+}
+.update {
+  background-color: #e7e7e7;
+  padding: 40px 0
+}
+.update .paper {
+  background-color: #fff;
+  padding: 65px 0;
+  border-radius: 10px;
+  box-shadow: #ccc 10px 10px 3px
+}
+.update .paper .image {
+  width: 50%;
+  margin: auto;
+  box-shadow: #ccc 10px 10px 3px;
+  border-radius: 30px
+}
+.update .paper .image img {
+  width: 100%;
+  border-radius: 30px
+}
+.update .paper .text {
+  margin-top: 50px;
+  padding: 10px 168px;
+  text-align: center;
+  font-size: 27px;
+  line-height: 2
+}
+/* end features */
+
+/* start clients we proud of them */
+.clients {
+  position: relative;
+  background-image: url(../imgs/our-client-bg.jpg);
+  min-height: 555px;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  margin-top: 100px
+}
+
+.clients div.active {
+  display: block
+}
+.clients .col-md-12 {
+  display: none
+}
+.clients .image {
+  width: 30%;
+  margin: 70px auto 60px
+}
+.clients .image img {
+  width: 100%
+}
+.clients .arrows {
+  position: absolute;
+  width: 100px;
+  height: 22px;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50px)
+}
+.clients .arrows .fa-arrow-left {
+  float: left;
+  font-size: 20px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: .2s
+}
+
+.clients .arrows .fa-arrow-right {
+ float: right;
+ font-size: 20px;
+ cursor: pointer;
+ transition-property: color;
+ transition-duration: .2s
+}
+.clients .arrows .fa-arrow-left:hover,
+.clients .arrows .fa-arrow-right:hover {
+  color: #e9e9e9
+}
+/* end clients we proud of them */
+
+/* start footer */
+.footer {
+  background-image: url(../imgs/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 622px
+}
+.footer .logo {
+  width: 45%;
+  padding-top: 210px
+}
+.footer p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 25px;
+}
+.footer .logo img {
+  width: 100%
+}
+.footer .image {
+  width: 45%;
+  padding-top: 210px
+}
+.footer .image img {
+  width: 100%
+}
+/* end footer */
